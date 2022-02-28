@@ -22,10 +22,16 @@ body{
     flex-direction: column;
 }
  h1{
+     background-color: #654fef;
+     padding: 10px;
+     border-radius: 10px;
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+  margin-bottom: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+}
+.title{
+  margin-bottom: 2rem;
+  background-color: #654fef;
 }
 .main-display{
     text-align: right;
@@ -37,18 +43,19 @@ body{
     display: flex;
     margin-bottom: 15px;
 }
-.row .btn{
+.row .btn , .result-btn{
     width: 25%;
     text-align: center;
     margin: 0 10px 0 0;
     padding: 13px 0;
     border-radius: 30px;
     background-color: #333333;
+    cursor: pointer;
 }
 .row1 .btn{
 background-color:#a5a5a5;
 }
-.row .btn:last-child{
+.row .btn:last-child, .result-btn{
     background-color: #ffa45c;
 }
 .row5 .btn:first-child{
@@ -63,6 +70,12 @@ background-color:#a5a5a5;
 .row .btn:active{
 background-color: rgb(32, 32, 32);
 }
-.row .btn:last-child:active{
+.row .btn:last-child:active, .result-btn:active{
     background-color: #8b3f00;
 }
+@media (min-width:1320px){
+    .calculator{
+        width: calc(100% - 64rem);
+    }
+}
+
